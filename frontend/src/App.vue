@@ -1,58 +1,32 @@
 <template>
-  <div id="app" style="padding: 20px;">
-    <NavBar />
-    <hr />
-    <span class="is-size-3">Birthday list</span>
-    <br />
-    <br />
-    <table class="table is-bordered is-narrow is-hoverable">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Navn</th>
-          <th>Fødselsdato</th>
-          <th>Alder</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr v-for="item in birthdayList" :key="item.id">
-          <td>{{ item.id }}</td>
-          <td>{{ item.name }}</td>
-          <td>{{ item.birthDate }}</td>
-          <td>{{ item.age }}</td>
-          <td>
-            <div class="buttons">
-              <button class="button is-warning is-small">Endre</button>
-              <button class="button is-danger is-small">Slett</button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import NavBar from './components/NavBar'
-export default {
-  name: 'App',
-  data () {
-    return {
-      birthdayList: [
-        { id: 1, name: 'John', birthDate: '24.12.87', age: 33 },
-        { id: 2, name: 'Arne', birthDate: '24.12.87', age: 44 },
-        { id: 3, name: 'Bjarne', birthDate: '24.12.87', age: 12 },
-        { id: 4, name: 'Bernt', birthDate: '24.12.87', age: 8 },
-        { id: 5, name: 'Berit', birthDate: '24.12.87', age: 5 }
-      ]
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
     }
-  },
-  components: {
-    NavBar
   }
 }
-</script>
-
-<style lang="scss"></style>
+</style>

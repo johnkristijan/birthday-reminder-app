@@ -1,5 +1,4 @@
 # TODO LIST
-- Add new birthday-entry page
 - Edit-page
 - Delete functionality
 - Backend
@@ -13,4 +12,5 @@
 
 # ARCHIVED / DONE
 - Basic Vue setup and framework
+- Add new birthday-entry page   
 - 

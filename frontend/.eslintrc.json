@@ -1,7 +1,0 @@
-{
-    "rules": {
-		// override default settings
-        "quotes": ["error", "single"],
-        "indent": ["error", 4]
-    }
-}
