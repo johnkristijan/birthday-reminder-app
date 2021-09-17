@@ -4,7 +4,7 @@
       "id": "1",
       "name": "John Kristijan Hermann",
       "birthDate": "1987-12-24",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": "2",

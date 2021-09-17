@@ -1,19 +1,16 @@
 <template>
   <form @submit="onSubmit" class="add-form">
-    <div class="from-control">
+    <div class="form-control">
       <label>Navn</label>
-      <input type="text" name="name" v-model="name" placeholder="Legg til navn" />
+      <input type="text" name="name" v-model="name" placeholder="Navn" />
     </div>
-
-    <div class="from-control">
+    <div class="form-control">
       <label>Fødselsdato</label>
       <date-picker v-model="birthDate" valueType="format"></date-picker>
-
-      <div class="form-control form-control-check">
+        <div class="form-control form-control-check">
         <label>Ønsker du påminnelse på epost?</label>
         <input type="checkbox" v-model="reminder" name="reminder" />
       </div>
-
       <input type="submit" value="Legg til bursdag" class="btn btn-block" />
     </div>
   </form>
@@ -33,7 +30,7 @@
         birthDate: null,
         age: '',
         reminder: false,
-        time1: null,
+        // time1: null,
       }
     },
 
@@ -61,19 +58,20 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .add-form {
     margin-bottom: 40px;
   }
 
   .form-control {
     margin: 20px 0;
+    
   }
   .form-control label {
     display: block;
   }
   .form-control input {
-    width: 100%;
+    width: 20%;
     height: 40px;
     margin: 5px;
     padding: 3px 7px;
