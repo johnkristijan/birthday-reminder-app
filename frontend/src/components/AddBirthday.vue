@@ -1,6 +1,6 @@
 <template>
   <form @submit="onSubmit" class="add-form">
-    <div class="from-control">
+    <div class="form-control">
       <label>Navn</label>
       <input type="text" name="name" v-model="name" placeholder="Legg til navn" />
     </div>

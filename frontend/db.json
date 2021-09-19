@@ -10,7 +10,7 @@
       "id": "2",
       "name": "Håkon Waldemar Hermann",
       "birthDate": "2000-11-25",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "name": "TEST",
       "birthDate": "2012-09-03",
       "age": "",
-      "reminder": false,
+      "reminder": true,
       "id": "KbvoOpT"
     }
   ]

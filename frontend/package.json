@@ -12,7 +12,8 @@
     "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vue2-datepicker": "^3.10.1"
+    "vue2-datepicker": "^3.10.1",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~4.5.0",
